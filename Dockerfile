@@ -5,3 +5,4 @@ RUN pip3 install scikit-learn
 COPY marks.pk1 /
 COPY markscode.py /
 CMD python3 markscode.py
+CMD [ "/bin/bash", "-ce", "tail -f /dev/null" ]
